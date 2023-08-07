@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}New User{% endblock %}
+
+{% block content %}
+<h1>User Registration</h1>
+    <form method="POST" action="/register">
+        <!-- Username -->
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+        <!-- First Name -->
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" required><br>
+        <!-- Last Name -->
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" required><br>
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}
